@@ -1,0 +1,94 @@
+LANGAGE SQL
+-----------
+
+INTEGER : int
+VARCHAR : str
+
+artiste
+- artiste_id
+- nom
+
+album
+- album_id
+- artiste_id
+- titre
+- annee_sortie
+
+
+--- Création de tables
+
+CREATE TABLE IF NOT EXISTS artiste (
+    artiste_id INTEGER NOT NULL PRIMARY KEY, 
+    nom VARCHAR);
+
+CREATE TABLE artiste (
+    artiste_id INTEGER NOT NULL PRIMARY KEY, 
+    nom VARCHAR);
+
+CREATE TABLE album (
+    album_id INTEGER NOT NULL PRIMARY KEY, 
+    artiste_id INTEGER REFERENCES artiste,
+    titre VARCHAR,
+    annee_sortie INTEGER);
+
+
+--- Insertion de variables 
+
+INSERT INTO artiste (nom) VALUES ("Michael Jackson");
+INSERT INTO album (artiste_id, titre, annee_sortie) VALUES (1, "Thriller", 1983);
+
+--- Mise à jour d'observations
+
+UPDATE album SET annee_sortie = 1982 WHERE titre = "Thriller";
+
+--- Suppresion de ligne
+DELETE FROM artiste WHERE nom = "Madonna"
+
+--- Filtre d'observation
+SELECT * FROM artiste
+SELECT nom FROM artiste
+SELECT * FROM album WHERE annee_sortie > 1990;
+
+--- Jointure de données
+SELECT nom, titre FROM album a JOIN artiste ar ON a.artiste_id = ar.artiste_id
+
+SELECT titre FROM album a JOIN artiste ar ON a.artiste_id = ar.artiste_id AND ar.nom = "Celine Dion"
+
+SELECT nom, titre FROM artiste as ar JOIN album as a ON ar.artiste_id = a.artiste_id;
+
+--- Suppresion de table
+
+DROP TABLE artiste ;
+
+DROP TABLE IF EXISTS artiste ;
+
+
+--- Vérification de la structure actuelle de la table "utilisateurs"
+PRAGMA table_info(utilisateurs);
+
+--- Création d'une nouvelle table avec la colonne renommée
+CREATE TABLE utilisateurs_new (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  -- Identifiant unique auto-incrémenté
+    nom_complet TEXT NOT NULL,  -- Ancienne colonne "nom" renommée en "nom_complet"
+    age INTEGER  -- Colonne inchangée
+);
+
+--- Copie des données de l'ancienne table "utilisateurs" vers "utilisateurs_new"
+INSERT INTO utilisateurs_new (id, nom_complet, age)
+SELECT id, nom, age FROM utilisateurs;
+
+--- Vérification des données dans la nouvelle table
+SELECT * FROM utilisateurs_new;
+
+--- Suppression de l'ancienne table "utilisateurs"
+DROP TABLE utilisateurs;
+
+--- Renommage de "utilisateurs_new" en "utilisateurs" pour conserver le même nom de table
+ALTER TABLE utilisateurs_new RENAME TO utilisateurs;
+
+--- Vérification que la colonne a bien été renommée
+PRAGMA table_info(utilisateurs);
+
+
+
+

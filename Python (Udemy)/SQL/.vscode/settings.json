@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Database",
+            "database": "C:\\Users\\ainau\\Downloads\\Université de Bordeaux\\Change_Life\\Sql\\database.sqlite"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "music",
+            "database": "${workspaceFolder:SQL}/music.sqlite"
+        }
+    ]
+}
