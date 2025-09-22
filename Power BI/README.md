@@ -28,3 +28,19 @@ Tous les dashboards ci-dessous ont été réalisés à partir de **données open
 - **Points clés** : tableau dynamique des pays, camembert par région, filtre temporel.  
 
 ![Dashboard Répartition Pays](assets/dashboard_country_distribution.png)  
+
+## Dashboard 4 – Transactions de Ventes (5 pays)
+- **Objectif** : explorer les ventes brutes par année, région, pays, segment de clients et produits.  
+- **Données** : données factices de ventes pour différents pays (Allemagne, Canada, États-Unis, France, Mexique).  
+- **Points clés** : diagramme en cascade (gross sales → région → pays → segment → produit), carte géographique interactive.  
+
+![Dashboard Ventes](assets/dashboard_sales.png)  
+
+---
+
+## Dashboard 5 – Analyse des Profits d’une Entreprise Indienne
+- **Objectif** : analyser les profits journaliers et détecter les tendances, pics et anomalies sur une période de 1 an.  
+- **Données** : dataset de ventes d’une entreprise indienne (factices).  
+- **Points clés** : courbe temporelle avec moyenne mobile, mise en évidence des min/max, slicer de dates, prédictions.  
+
+![Dashboard Profits Inde](assets/dashboard_profits_india.png)  
