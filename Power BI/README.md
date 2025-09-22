@@ -27,7 +27,9 @@ Tous les dashboards ci-dessous ont été réalisés à partir de **données open
 - **Données** : Banque Mondiale.  
 - **Points clés** : tableau dynamique des pays, camembert par région, filtre temporel.  
 
-![Dashboard Répartition Pays](assets/dashboard_country_distribution.png)  
+![Dashboard Répartition Pays](assets/dashboard_country_distribution.png)
+
+---
 
 ## Dashboard 4 – Transactions de Ventes (5 pays)
 - **Objectif** : explorer les ventes brutes par année, région, pays, segment de clients et produits.  
