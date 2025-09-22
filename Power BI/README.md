@@ -1,4 +1,4 @@
-# 📊 Power BI Dashboards
+# Power BI Dashboards
 
 Tous les dashboards ci-dessous ont été réalisés à partir de **données open source** (Banque Mondiale, OCDE, etc.).  
 
