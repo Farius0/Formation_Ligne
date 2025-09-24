@@ -1,6 +1,6 @@
 # Formation_Ligne
 
-💡 Ce dépôt regroupe mes projets et mini-projets réalisés dans le cadre de formations en ligne (terminées ou en cours).  
+Ce dépôt regroupe mes projets et mini-projets réalisés dans le cadre de formations en ligne (terminées ou en cours).  
 Chaque dossier correspond à un module, un exercice pratique ou un cas d’étude appliqué.  
 
 ---
