@@ -10,9 +10,8 @@ body {
 
 div.block {
     background-color: white;
-    margin : 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;
+    margin : 40px 3% 60px 3%;
+    padding: 0 10px 10px 10px;
     box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.104);
     overflow: visible;
 }        
@@ -21,7 +20,7 @@ div.block {
     text-align: center;   
     width: 100%;         
     /*background-color: blue;*/
-}        
+}         
 
 p.recette {
     font-weight: bold;
@@ -75,11 +74,11 @@ table.position {
 
 table.position td {
     text-align: center;
-    font-size: 14px;    
+    font-size: 12px;    
 };
 
 table.position th {
-    font-size: 16px;    
+    font-size: 14px;    
 };
 
 img.position{
@@ -92,8 +91,8 @@ img.position{
 }
 
 div.liste{
-    width: 45%;
-    margin: 20px 0 0 0;
+    width: 100%;
+    margin: 5px 0 0 0;
 }
 
 div.liste h2{
@@ -105,11 +104,6 @@ div.liste h2{
 
 div.ingredients{
     display: inline-block;
-    margin-right: 10%;
-}
-
-div.preparation{
-    float: right;
 }
 
 div.panier p{
@@ -122,19 +116,69 @@ div.panier p{
 div.preparation p.numero{
     background-color: #6C829D;
     color: white;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    padding-top: 5px;
+    padding-top: 3px;
     box-sizing: border-box;
     margin: 0 ;
 }
 
 div.preparation td{
 vertical-align: top;
+}
+
+div.preparation td.etape{
+padding: 3px 0 3px 10px;
+}
+
+div.preparation tr{
+height: 25px;
+}
+
+/* Styles pour ordinateur */
+
+@media only screen and (min-width: 768px) {
+div.block {
+    min-width: 350px;
+    margin : 60px 10% 80px 10%;
+    padding: 0 30px 30px 30px;
+}  
+
+table.position {
+    height: 40px;
+}
+
+table.position td {
+    text-align: center;
+    font-size: 14px;    
+};
+
+table.position th {
+    font-size: 16px;    
+};
+
+div.liste{
+    width: 45%;
+    margin: 20px 0 0 0;
+}
+ 
+div.ingredients{
+    margin-right: 10%;
+}
+
+div.preparation p.numero{
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+div.preparation{
+    float: right;
 }
 
 div.preparation td.etape{
@@ -145,3 +189,13 @@ div.preparation tr{
 height: 40px;
 }
 
+}
+
+@media only screen and (min-width: 900px) {
+div.block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 645px;
+}  
+
+}
