@@ -69,17 +69,17 @@ table.position {
     width: 100%;
     background-color: #6C829DC0;
     color: white;
-    height: 60px;
+    height: 50px;
 }
 
 table.position td {
     text-align: center;
     font-size: 12px;    
-};
+}
 
 table.position th {
     font-size: 14px;    
-};
+}
 
 img.position{
     display: block;
@@ -143,23 +143,22 @@ height: 25px;
 
 @media only screen and (min-width: 768px) {
 div.block {
-    min-width: 350px;
     margin : 60px 10% 80px 10%;
     padding: 0 30px 30px 30px;
+    min-width: 350px;
 }  
 
 table.position {
-    height: 40px;
+    height: 60px;
 }
 
 table.position td {
-    text-align: center;
     font-size: 14px;    
-};
+}
 
 table.position th {
     font-size: 16px;    
-};
+}
 
 div.liste{
     width: 45%;
@@ -170,6 +169,10 @@ div.ingredients{
     margin-right: 10%;
 }
 
+div.preparation{
+    float: right;
+}
+
 div.preparation p.numero{
     width: 25px;
     height: 25px;
@@ -177,12 +180,8 @@ div.preparation p.numero{
     padding-top: 5px;
 }
 
-div.preparation{
-    float: right;
-}
-
 div.preparation td.etape{
-padding: 5px 0 10px 10px;
+padding: 0 0 10px 10px;
 }
 
 div.preparation tr{
@@ -191,11 +190,11 @@ height: 40px;
 
 }
 
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
 div.block {
     margin-left: auto;
     margin-right: auto;
     width: 645px;
 }  
 
-}
+} */
