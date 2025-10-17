@@ -1,0 +1,147 @@
+<TabbedLayoutEx@TabbedPanel>:
+    do_default_tab: False
+    TabbedPanelItem:
+        text: "Widget"
+        MainWidget:
+    TabbedPanelItem:
+        text: "BoxLayout"
+        BoxLayoutEx:
+    TabbedPanelItem:
+        text: "AnchorLayout"
+        AnchorLayoutEx:
+    TabbedPanelItem:
+        text: "GridLayout"
+        GridLayoutEx:
+    TabbedPanelItem:
+        text: "StackLayout"
+        StackLayoutEx:
+    TabbedPanelItem:
+        text: "ScrollView"
+        ScrollViewEx:
+    TabbedPanelItem:
+        text: "PageLayout"
+        PageLayoutEx:
+
+<PageLayoutEx>:
+    MainWidget:
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    BoxLayoutEx:
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    AnchorLayoutEx:
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    GridLayoutEx:
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+<ScrollViewEx@ScrollView>:
+    StackLayoutEx:
+        size_hint: 1, None
+        height: self.minimum_height
+
+<StackLayoutEx>:
+# "left-right, top-bottom"
+    orientation: "lr-tb"
+#    padding: ("20dp", "20dp", "20dp", "20dp")
+#    spacing: "20dp", "20dp"
+#    Button:
+#        text: "A"
+#        size_hint: .5, .5
+#    Button:
+#        text: "B"
+#        size_hint: .5, .5
+#    Button:
+#        text: "C"
+#        size_hint: .5, .5
+
+<GridLayoutEx@GridLayout>:
+    # rows:
+    cols: 3
+    Button:
+        text: "A"
+        size_hint: None, 1
+        width: "60dp"
+    Button:
+        text: "B"
+    Button:
+        text: "C"
+    Button:
+        text: "D"
+        size_hint: None, 1
+        width: "60dp"
+    Button:
+        text: "E"
+    Button:
+        text: "F"
+
+<AnchorLayoutEx>:
+    # right, left, center
+    anchor_x: "center"
+    # bottom, top, center
+    anchor_y: "center"
+    BoxLayout:
+        size_hint: 0.5, 0.5
+        Button:
+            text: "A"
+        Button:
+            text: "B"
+
+<BoxLayoutEx>:
+    orientation: "vertical"
+    # spacing: "10dp"
+    Button:
+        text: "A"
+        size_hint: 0.5, None
+        # size: "100dp", "60dp"
+        # width: "100dp"
+        height: "60dp"
+        # x, right, center_x
+        # y, top, center_y
+        pos_hint: { "x": 0.5 }
+    BoxLayout:
+        orientation: "horizontal"
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"
+    Label:
+        text: "C"
+
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: "80dp", "40dp"
+        pos: "40dp", "40dp"
+        color: 1, 0, 0, 1
+    Button:
+        text: "Hello2"
+        size: "80dp", "40dp"
+        pos: "40dp", "80dp"
+        color: 0, 1, 0, 1
+    Label:
+        text: "Hello2"
+        size: "80dp", "40dp"
+        pos: "40dp", "120dp"
+        color: 0, 0, 1, 1

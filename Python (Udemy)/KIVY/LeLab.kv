@@ -1,0 +1,43 @@
+#: import layout_ex layout_ex
+#: import widget_ex widget_ex
+#: import canvas_ex canvas_ex
+#: import nav_screen_manager nav_screen_manager
+#: import boxlayout_with_action_bar boxlayout_with_action_bar
+
+<MyScreenManager>:
+    Screen:
+        name: 'home'
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: 'Go to LayoutsEx'
+                on_press: app.manager.push_screen('LayoutsEx')
+            Button:
+                text: 'Go to WidgetsEx'
+                on_press: app.manager.push_screen('WidgetsEx')
+            Button:
+                text: 'Go to ImagesEx'
+                on_press: app.manager.push_screen('ImagesEx')
+            Button:
+                text: 'Go to CanvasEx'
+                on_press: app.manager.push_screen('CanvasEx')
+    Screen:
+        name: 'LayoutsEx'
+        BoxLayoutWithActionBar:
+            title: 'Layouts'
+            TabbedLayoutEx:
+    Screen:
+        name: 'WidgetsEx'
+        BoxLayoutWithActionBar:
+            title: 'Widgets'
+            WidgetsEx:
+    Screen:
+        name: 'ImagesEx'
+        BoxLayoutWithActionBar:
+            title: 'Images'
+            ImagesEx:
+    Screen:
+        name: 'CanvasEx'
+        BoxLayoutWithActionBar:
+            title: 'Canvas'
+            TabbedCanvasEx:

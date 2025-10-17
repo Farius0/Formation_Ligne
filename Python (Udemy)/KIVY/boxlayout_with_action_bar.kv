@@ -1,0 +1,11 @@
+<BoxLayoutWithActionBar>:
+    orientation: 'vertical'
+    ActionBar:
+        ActionView:
+            ActionPrevious:
+                title: root.title
+                on_press: app.manager.pop_screen()
+                app_icon: 'images/lab_logo.png'
+                app_icon_size: '28dp, 28dp'
+#           ActionNext:
+#                on_press: root.push_screen('Screen2')
