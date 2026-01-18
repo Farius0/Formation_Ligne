@@ -1,0 +1,5 @@
+2;"Protect care";"12 bd Hausman";"75008";"paris";;;;
+10;"Meche industrie";"16 place mercue";"75001";"paris";;;;
+11;"Nuclear coton";"41 impasse perdue";"75013";"paris";;;;
+12;"beautiful crea";"19 rue du bouchon";"75001";"paris";;;;
+7;"Creation fer";"32 Avenue de la forêt";"92100";"boulogne";;;;
