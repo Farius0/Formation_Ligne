@@ -1,48 +1,101 @@
-# Power BI Dashboards
+# Data Visualization & Analytics Portfolio
 
-Tous les dashboards ci-dessous ont été réalisés à partir de **données open source** (Banque Mondiale, OCDE, etc.).  
+Ce dépôt présente une sélection de projets de **data visualisation**, **data analytics** et **reporting**, réalisés à des fins pédagogiques, analytiques et de portfolio.
 
----
-
-## Dashboard 1 – PIB, Croissance et Espérance de Vie
-- **Objectif** : analyser le PIB, la croissance et l’espérance de vie pour différents pays (Bénin, Chine, France, États-Unis).  
-- **Données** : Banque Mondiale.  
-- **Points clés** : utilisation de slicers, courbes d’évolution, cartes géographiques.  
-
-![Dashboard PIB & Espérance de Vie](assets/dashboard_gdp_life.png)    
+Les projets sont distingués selon leur **nature** :
+- **Dashboards de suivi (monitoring)**  
+- **Reports analytiques (Power BI)**  
 
 ---
 
-## Dashboard 2 – Population par Région et Groupes de Revenu
-- **Objectif** : comparer la population mondiale par région et analyser le PIB par groupes de revenu.  
-- **Données** : Banque Mondiale (Population et World Development Indicators).  
-- **Points clés** : treemap interactif, segmentation par groupe de revenu, navigation par années.  
+## Web Dashboard – Weather Monitoring
 
-![Dashboard Population & Income](assets/dashboard_population_income.png)  
+### Weather Dashboard – Climate & Air Quality Monitoring
+- **Type** : Web dashboard (monitoring)
+- **Objectif** : fournir une vue synthétique et visuelle des conditions météorologiques et environnementales.
+- **Usage** : suivi d’indicateurs, visualisation rapide, aide à la décision à court terme.
+- **Contexte** : projet réalisé à partir d’un tutoriel YouTube, puis **structuré, amélioré et enrichi** à des fins pédagogiques.
+
+#### Indicateurs affichés
+- Température actuelle et conditions météo par ville
+- Prévisions multi-jours
+- Humidité, vent, visibilité, pression, UV
+- Qualité de l’air (AQI, PM10, PM2.5, SO₂, NO₂, CO, O₃)
+- Lever et coucher du soleil
+- Probabilité de pluie quotidienne
+
+#### Apports personnels
+- Amélioration de la lisibilité et de l’ergonomie
+- Réorganisation du layout
+- Ajout et structuration d’indicateurs environnementaux
+- Hiérarchisation plus claire de l’information
+
+> **Disclaimer**  
+> L’idée initiale de ce projet provient d’un tutoriel public.  
+> Le projet est présenté ici dans un cadre éducatif et de portfolio, avec attribution de la source.  
+> Certains assets (icônes, images, datasets) restent la propriété de leurs auteurs respectifs.
+
+![Weather Dashboard](assets/weather_dashboard.png)
 
 ---
 
-## Dashboard 3 – Répartition des Pays et Population Régionale
-- **Objectif** : analyser la répartition des pays par région et visualiser la population selon les groupes de revenu.  
-- **Données** : Banque Mondiale.  
-- **Points clés** : tableau dynamique des pays, camembert par région, filtre temporel.  
+## Power BI Reports – Data Analysis & Storytelling
 
-![Dashboard Répartition Pays](assets/dashboard_country_distribution.png)
+Les projets suivants sont des **reports analytiques Power BI**, orientés **exploration des données**, **comparaison**, et **aide à la décision**, à partir de données open source ou de datasets pédagogiques.
 
 ---
 
-## Dashboard 4 – Transactions de Ventes (5 pays)
-- **Objectif** : explorer les ventes brutes par année, région, pays, segment de clients et produits.  
-- **Données** : données factices de ventes pour différents pays (Allemagne, Canada, États-Unis, France, Mexique).  
-- **Points clés** : diagramme en cascade (gross sales → région → pays → segment → produit), carte géographique interactive.  
+### Report 1 – PIB, Croissance et Espérance de Vie
+- **Objectif** : analyser les relations entre PIB, croissance économique et espérance de vie.
+- **Pays étudiés** : Bénin, Chine, France, États-Unis.
+- **Source** : Banque Mondiale.
+- **Approche** : analyse comparative, visualisation temporelle, filtres interactifs.
 
-![Dashboard Ventes](assets/dashboard_sales.png)  
+![Dashboard PIB & Espérance de Vie](assets/report_gdp_life.png)
 
 ---
 
-## Dashboard 5 – Analyse des Profits d’une Entreprise Indienne
-- **Objectif** : analyser les profits journaliers et détecter les tendances, pics et anomalies sur une période de 1 an.  
-- **Données** : dataset de ventes d’une entreprise indienne (factices).  
-- **Points clés** : courbe temporelle avec moyenne mobile, mise en évidence des min/max, slicer de dates, prédictions.  
+### Report 2 – Population par Région et Groupes de Revenu
+- **Objectif** : étudier la répartition de la population mondiale et les différences selon les groupes de revenu.
+- **Source** : Banque Mondiale (WDI).
+- **Approche** : segmentation, treemap, analyse temporelle.
 
-![Dashboard Profits Inde](assets/dashboard_profits_india.png)  
+![Dashboard Population & Income](assets/report_population_income.png)
+
+---
+
+### Report 3 – Répartition des Pays et Population Régionale
+- **Objectif** : analyser la distribution des pays et des populations par région.
+- **Source** : Banque Mondiale.
+- **Approche** : tableaux analytiques, graphiques circulaires, filtres temporels.
+
+![Dashboard Répartition Pays](assets/report_country_distribution.png)
+
+---
+
+### Report 4 – Analyse des Transactions de Ventes (5 pays)
+- **Objectif** : analyser les ventes brutes par dimensions géographiques et commerciales.
+- **Données** : dataset de ventes factice.
+- **Pays** : Allemagne, Canada, États-Unis, France, Mexique.
+- **Approche** : analyse multi-niveaux, diagramme en cascade, cartographie.
+
+![Dashboard Ventes](assets/report_sales.png)
+
+---
+
+### Report 5 – Analyse des Profits d’une Entreprise Indienne
+- **Objectif** : analyser les profits journaliers et détecter tendances et anomalies.
+- **Données** : dataset factice.
+- **Approche** : séries temporelles, indicateurs statistiques, lecture décisionnelle.
+
+![Dashboard Profits Inde](assets/report_profits_india.png)
+
+---
+
+## Remarque générale
+
+Ces projets illustrent ma capacité à :
+- Transformer des données brutes en **insights visuels clairs**
+- Structurer des dashboards lisibles et orientés décision
+- Appliquer des bonnes pratiques de **data visualisation**
+- Être transparent sur les sources, l’inspiration et les usages
