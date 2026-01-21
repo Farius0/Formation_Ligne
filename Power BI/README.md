@@ -24,12 +24,6 @@ Les projets sont distingués selon leur **nature** :
 - Lever et coucher du soleil
 - Probabilité de pluie quotidienne
 
-#### Apports personnels
-- Amélioration de la lisibilité et de l’ergonomie
-- Réorganisation du layout
-- Ajout et structuration d’indicateurs environnementaux
-- Hiérarchisation plus claire de l’information
-
 > **Disclaimer**  
 > L’idée initiale de ce projet provient d’un tutoriel public.  
 > Le projet est présenté ici dans un cadre éducatif et de portfolio, avec attribution de la source.  
