@@ -33,13 +33,13 @@ L’ensemble illustre ma capacité à transformer des données brutes en **insig
 ![Hospital Dashboard – Overview](assets/hospital_dashboard.png)
 
 *Aperçu animé du dashboard – navigation entre les différents états*  
-![Hospital Dashboard – GIF](assets/hospital_dashboard.gif)
+![Hospital Dashboard – GIF](assets/hospital_dashboard_3.gif)
 
 ---
 
 ## Web Dashboard - Weather Monitoring
 
-### Weather Dashboard – Climate & Air Quality Monitoring
+### Weather Dashboard - Climate & Air Quality Monitoring
 - **Type** : Web dashboard (monitoring)
 - **Objectif** : fournir une vue synthétique et visuelle des conditions météorologiques et environnementales.
 - **Usage** : suivi d’indicateurs, visualisation rapide, aide à la décision à court terme.
@@ -57,13 +57,13 @@ L’ensemble illustre ma capacité à transformer des données brutes en **insig
 
 ---
 
-## Power BI Reports – Data Analysis & Storytelling
+## Power BI Reports - Data Analysis & Storytelling
 
 Les projets suivants sont des **reports analytiques Power BI**, orientés **exploration des données**, **comparaison**, et **aide à la décision**, à partir de données open source ou de datasets pédagogiques.
 
 ---
 
-### Report 1 – PIB, Croissance et Espérance de Vie
+### Report 1 - PIB, Croissance et Espérance de Vie
 - **Objectif** : analyser les relations entre PIB, croissance économique et espérance de vie.
 - **Pays étudiés** : Bénin, Chine, France, États-Unis.
 - **Source** : Banque Mondiale.
@@ -73,7 +73,7 @@ Les projets suivants sont des **reports analytiques Power BI**, orientés **expl
 
 ---
 
-### Report 2 – Population par Région et Groupes de Revenu
+### Report 2 - Population par Région et Groupes de Revenu
 - **Objectif** : étudier la répartition de la population mondiale et les différences selon les groupes de revenu.
 - **Source** : Banque Mondiale (WDI).
 - **Approche** : segmentation, treemap, analyse temporelle.
@@ -82,7 +82,7 @@ Les projets suivants sont des **reports analytiques Power BI**, orientés **expl
 
 ---
 
-### Report 3 – Répartition des Pays et Population Régionale
+### Report 3 - Répartition des Pays et Population Régionale
 - **Objectif** : analyser la distribution des pays et des populations par région.
 - **Source** : Banque Mondiale.
 - **Approche** : tableaux analytiques, graphiques circulaires, filtres temporels.
@@ -91,7 +91,7 @@ Les projets suivants sont des **reports analytiques Power BI**, orientés **expl
 
 ---
 
-### Report 4 – Analyse des Transactions de Ventes (5 pays)
+### Report 4 - Analyse des Transactions de Ventes (5 pays)
 - **Objectif** : analyser les ventes brutes par dimensions géographiques et commerciales.
 - **Données** : dataset de ventes factice.
 - **Pays** : Allemagne, Canada, États-Unis, France, Mexique.
@@ -101,7 +101,7 @@ Les projets suivants sont des **reports analytiques Power BI**, orientés **expl
 
 ---
 
-### Report 5 – Analyse des Profits d’une Entreprise Indienne
+### Report 5 - Analyse des Profits d’une Entreprise Indienne
 - **Objectif** : analyser les profits journaliers et détecter tendances et anomalies.
 - **Données** : dataset factice.
 - **Approche** : séries temporelles, indicateurs statistiques, lecture décisionnelle.
