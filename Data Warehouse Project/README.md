@@ -1,6 +1,6 @@
 # SQL Server Data Warehouse Project
 
-## Overview
+## 📌 Project Overview
 This repository contains a guided end‑to‑end **Data Warehouse** implementation on **SQL Server**, using a layered **Bronze → Silver → Gold** approach.
 
 The project covers:
@@ -11,7 +11,7 @@ The project covers:
 
 ---
 
-## Architecture (Bronze → Silver → Gold)
+## 🏗 Architecture (Bronze → Silver → Gold)
 ![Data Warehouse Architecture](docs/architecture.png)
 
 ### Bronze (Raw)
@@ -32,7 +32,7 @@ The project covers:
 
 ---
 
-## Data Flow
+## 🔄 Data Flow
 ![Data Flow Diagram](docs/data_flow.png)
 
 High‑level pipeline:
@@ -64,7 +64,7 @@ High‑level pipeline:
 
 ---
 
-## Gold Layer (Sales Data Mart - Star Schema)
+## ⭐ Gold Layer (Sales Data Mart - Star Schema)
 ![Sales Data Mart Star Schema](docs/data_model.png)
 
 ### Dimensions
@@ -76,7 +76,7 @@ High‑level pipeline:
 
 ---
 
-## Data Quality Controls (Silver)
+## 🛡 Data Quality Controls (Silver)
 Examples of validations applied in Silver:
 - Detecting duplicates with window functions (`ROW_NUMBER()`)
 - Standardizing categorical values (e.g., gender, marital status)
@@ -117,3 +117,25 @@ Examples of validations applied in Silver:
 - Gold data catalog: `docs/data_catalog.md`
 - Naming conventions: `docs/naming-conventions.md`
 
+## 📊 Analytical Continuity
+
+An advanced SQL Analytics project builds upon the Gold layer of this
+warehouse to implement :
+👉
+https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Analytics
+
+-   KPI engineering
+-   Segmentation logic
+-   Time-series analysis
+-   Business reporting views
+
+Together, these projects simulate a full end-to-end Business Intelligence architecture, from raw data ingestion to advanced analytical reporting.
+
+## 🎯 Skills Demonstrated
+
+-   Data Warehouse architecture
+-   SQL Server schema design
+-   ETL structuring
+-   Data cleaning & validation
+-   Star Schema modeling
+-   Production-style data layering

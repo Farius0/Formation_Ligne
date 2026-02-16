@@ -23,14 +23,17 @@ end-to-end analytical system design.
 
 ## 🏗 Architectural Design
 
-This project implements a simplified analytical Data Warehouse
-architecture based on a **Star Schema** design.
+This project operates on a structured Star Schema model consistent with
+enterprise Data Warehouse design principles.
 
-### 🔗 Relationship to the Data Warehouse Project
+It complements a separate Data Warehouse engineering project that
+focuses on ingestion, transformation, and modeling.
 
-This project builds upon the learning material provided in:
 👉
 https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Project
+
+Together, they simulate a complete BI pipeline from raw data ingestion
+to advanced analytical reporting.
 
 ### Data Flow
 
@@ -197,8 +200,3 @@ reliability.
 -   Business-driven data segmentation
 -   Performance-oriented query structuring
 -   Production-ready reporting layer design
-
-------------------------------------------------------------------------
-
-This project reflects structured engineering practices, analytical
-rigor, and scalable SQL design aligned with real-world BI standards.
