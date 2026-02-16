@@ -1,0 +1,80 @@
+/*
+===============================================================================
+Ranking Analysis
+===============================================================================
+Purpose:
+    - To rank items (e.g., products, customers) based on performance or other metrics.
+    - To identify top performers or laggards.
+
+SQL Functions Used:
+    - Window Ranking Functions: RANK(), DENSE_RANK(), ROW_NUMBER(), TOP
+    - Clauses: GROUP BY, ORDER BY
+===============================================================================
+*/
+
+USE DataWarehouseAnalytics
+GO
+
+/*
+===============================================================================
+01 - Top 5 Products by Revenue (with ties)
+===============================================================================
+*/
+
+SELECT TOP (5) WITH TIES
+    p.product_name,
+    SUM(f.sales_amount) AS total_revenue
+FROM gold.fact_sales f
+INNER JOIN gold.dim_products p
+    ON p.product_key = f.product_key
+GROUP BY p.product_name
+ORDER BY total_revenue DESC;
+
+/*
+===============================================================================
+02 - Top 5 Products by Revenue (with ties)
+===============================================================================
+*/
+
+SELECT TOP 5 WITH TIES
+    p.product_name,
+    SUM(f.sales_amount) AS total_revenue
+FROM gold.fact_sales f
+LEFT JOIN gold.dim_products p
+    ON p.product_key = f.product_key
+GROUP BY p.product_name
+ORDER BY total_revenue;
+
+/*
+===============================================================================
+03 - Top 10 Customers by Revenue (with ties)
+===============================================================================
+*/
+
+SELECT TOP 10 WITH TIES
+    c.customer_key,
+    CONCAT(COALESCE(c.first_name,''), ' ', COALESCE(c.last_name,'')) AS customer_name,
+    SUM(f.sales_amount) AS total_revenue
+FROM gold.fact_sales f
+INNER JOIN gold.dim_customers c
+    ON c.customer_key = f.customer_key
+GROUP BY c.customer_key, c.first_name, c.last_name
+ORDER BY total_revenue DESC;
+
+
+/*
+===============================================================================
+04 - TOP 3 Customers with the Fewest Orders (with ties)
+===============================================================================
+*/
+
+SELECT TOP (3) WITH TIES
+    c.customer_key,
+    CONCAT(COALESCE(c.first_name,''), ' ', COALESCE(c.last_name,'')) AS customer_name,
+    COUNT(DISTINCT f.order_number) AS total_orders
+FROM gold.dim_customers c
+LEFT JOIN gold.fact_sales f
+    ON f.customer_key = c.customer_key
+GROUP BY c.customer_key, c.first_name, c.last_name
+ORDER BY total_orders ASC;
+
