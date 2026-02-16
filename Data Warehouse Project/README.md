@@ -121,6 +121,7 @@ Examples of validations applied in Silver:
 
 An advanced SQL Analytics project builds upon the Gold layer of this
 warehouse to implement :
+
 👉
 https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Analytics
 
