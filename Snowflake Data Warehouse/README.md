@@ -18,6 +18,7 @@ platforms while adapting to modern cloud data warehousing patterns.
 ------------------------------------------------------------------------
 
 # 🏗 Architecture Overview
+![Data Warehouse Architecture](docs/architecture.png)
 
 High-level pipeline:
 
@@ -138,7 +139,7 @@ README.md
 
 This project extends into:
 
-https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Analytics
+👉[Data Warehouse Analytics Project](https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Analytics)
 
 Together, they simulate a complete BI pipeline: - Data ingestion - Data
 warehouse modeling - Analytical transformation - Business reporting

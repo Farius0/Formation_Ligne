@@ -122,8 +122,7 @@ Examples of validations applied in Silver:
 An advanced SQL Analytics project builds upon the Gold layer of this
 warehouse to implement :
 
-👉
-https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Analytics
+👉[Data Warehouse Analytics Project](https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Analytics)
 
 -   KPI engineering
 -   Segmentation logic
@@ -140,3 +139,11 @@ Together, these projects simulate a full end-to-end Business Intelligence archit
 -   Data cleaning & validation
 -   Star Schema modeling
 -   Production-style data layering
+
+## ❄️ Cloud Migration & Cross-Platform Implementation
+
+This SQL Server Data Warehouse has been fully re-implemented
+in Snowflake to demonstrate architectural portability and
+modern cloud data warehouse design.
+
+👉 [Snowflake Data Warehouse Project](https://github.com/Farius0/Formation_Ligne/tree/main/Snowflake%20Data%20Warehouse)

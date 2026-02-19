@@ -29,8 +29,7 @@ enterprise Data Warehouse design principles.
 It complements a separate Data Warehouse engineering project that
 focuses on ingestion, transformation, and modeling.
 
-👉
-https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Project
+👉 [SQL Server Data Warehouse Project](https://github.com/Farius0/Formation_Ligne/tree/main/Data%20Warehouse%20Project)
 
 Together, they simulate a complete BI pipeline from raw data ingestion
 to advanced analytical reporting.
