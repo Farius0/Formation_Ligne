@@ -13,7 +13,7 @@ This layer ensures: - Cleaned and standardized data - Referential integrity - Bu
 
 ------------------------------------------------------------------------
 
-# 1. gold.dim_customers
+# 1. 🧾 gold.dim_customers
 
 ## Purpose
 
@@ -26,45 +26,18 @@ attributes.
 
 ## Columns
 
-  ------------------------------------------------------------------------
-  Column Name               Data Type                 Description
-  ------------------------- ------------------------- --------------------
-  customer_key              INT                       Surrogate key
-                                                      uniquely identifying
-                                                      each customer
-                                                      record.
-
-  customer_id               INT                       Source-system
-                                                      customer identifier
-                                                      (CRM).
-
-  customer_number           NVARCHAR(50)              Business/customer
-                                                      reference (CRM key).
-
-  first_name                NVARCHAR(50)              Standardized
-                                                      customer first name.
-
-  last_name                 NVARCHAR(50)              Standardized
-                                                      customer last name.
-
-  country                   NVARCHAR(50)              Standardized country
-                                                      name (e.g., Germany,
-                                                      United States).
-
-  marital_status            NVARCHAR(50)              Standardized marital
-                                                      status (Single,
-                                                      Married, N/A).
-
-  gender                    NVARCHAR(20)              Standardized gender
-                                                      (Male, Female, N/A).
-
-  birthdate                 DATE                      Customer birthdate
-                                                      (YYYY-MM-DD).
-
-  create_date               DATE                      Customer record
-                                                      creation date from
-                                                      CRM.
-  ------------------------------------------------------------------------
+| Column Name       | Data Type        | Description                                                      |
+|------------------|-----------------|------------------------------------------------------------------|
+| customer_key     | INT             | Surrogate key uniquely identifying each customer record.        |
+| customer_id      | INT             | Source-system customer identifier (CRM).                        |
+| customer_number  | NVARCHAR(50)    | Business / customer reference (CRM key).                        |
+| first_name       | NVARCHAR(50)    | Standardized customer first name.                               |
+| last_name        | NVARCHAR(50)    | Standardized customer last name.                                |
+| country          | NVARCHAR(50)    | Standardized country name (e.g., Germany, United States).       |
+| marital_status   | NVARCHAR(50)    | Standardized marital status (Single, Married, N/A).             |
+| gender           | NVARCHAR(20)    | Standardized gender (Male, Female, N/A).                        |
+| birthdate        | DATE            | Customer birthdate (YYYY-MM-DD).                                |
+| create_date      | DATE            | Customer record creation date from CRM.                         |
 
 ## Data Quality Rules
 
@@ -76,7 +49,7 @@ attributes.
 
 ------------------------------------------------------------------------
 
-# 2. gold.dim_products
+# 2.📦 gold.dim_products
 
 ## Purpose
 
@@ -89,46 +62,19 @@ information.
 
 ## Columns
 
-  -----------------------------------------------------------------------
-  Column Name            Data Type                   Description
-  ---------------------- --------------------------- --------------------
-  product_key            INT                         Surrogate key
-                                                     uniquely identifying
-                                                     each product record.
-
-  product_id             INT                         Source-system
-                                                     product identifier
-                                                     (CRM).
-
-  product_number         NVARCHAR(50)                Business product
-                                                     reference code.
-
-  product_name           NVARCHAR(100)               Descriptive product
-                                                     name.
-
-  category_id            NVARCHAR(50)                ERP category
-                                                     identifier.
-
-  category               NVARCHAR(100)               Product category
-                                                     (e.g., Bikes,
-                                                     Components).
-
-  subcategory            NVARCHAR(100)               Detailed product
-                                                     classification.
-
-  maintenance            NVARCHAR(100)               Maintenance
-                                                     attribute from ERP.
-
-  cost                   DECIMAL(18,2)               Product cost in
-                                                     monetary units.
-
-  product_line           NVARCHAR(50)                Product line (Road,
-                                                     Mountain, Touring,
-                                                     etc.).
-
-  start_date             DATE                        Product effective
-                                                     start date.
-  -----------------------------------------------------------------------
+| Column Name       | Data Type        | Description                                                     |
+|------------------|-----------------|-----------------------------------------------------------------|
+| product_key      | INT             | Surrogate key uniquely identifying each product record.        |
+| product_id       | INT             | Source-system product identifier (CRM).                        |
+| product_number   | NVARCHAR(50)    | Business product reference code.                               |
+| product_name     | NVARCHAR(100)   | Descriptive product name.                                      |
+| category_id      | NVARCHAR(50)    | ERP category identifier.                                       |
+| category         | NVARCHAR(100)   | Product category (e.g., Bikes, Components).                    |
+| subcategory      | NVARCHAR(100)   | Detailed product classification.                               |
+| maintenance      | NVARCHAR(100)   | Maintenance attribute from ERP.                                |
+| cost             | DECIMAL(18,2)   | Product cost in monetary units.                                |
+| product_line     | NVARCHAR(50)    | Product line (Road, Mountain, Touring, etc.).                  |
+| start_date       | DATE            | Product effective start date.                                  |
 
 ## Data Quality Rules
 
@@ -139,7 +85,7 @@ information.
 
 ------------------------------------------------------------------------
 
-# 3. gold.fact_sales
+# 3. 🧾 gold.fact_sales
 
 ## Purpose
 
@@ -152,31 +98,18 @@ calculation and reporting.
 
 ## Columns
 
-  --------------------------------------------------------------------------
-  Column Name            Data Type                   Description
-  ---------------------- --------------------------- -----------------------
-  order_number           NVARCHAR(50)                Sales order identifier
-                                                     (e.g., SO54496).
 
-  product_key            INT                         Foreign key referencing
-                                                     `gold.dim_products`.
-
-  customer_key           INT                         Foreign key referencing
-                                                     `gold.dim_customers`.
-
-  order_date             DATE                        Order date.
-
-  shipping_date          DATE                        Shipping date.
-
-  due_date               DATE                        Payment due date.
-
-  sales_amount           DECIMAL(18,2)               Total sales amount for
-                                                     the order line.
-
-  quantity               INT                         Quantity sold.
-
-  price                  DECIMAL(18,2)               Unit price.
-  --------------------------------------------------------------------------
+| Column Name     | Data Type        | Description                                                     |
+|----------------|-----------------|-----------------------------------------------------------------|
+| order_number   | NVARCHAR(50)    | Sales order identifier (e.g., SO54496).                         |
+| product_key    | INT             | Foreign key referencing `gold.dim_products`.                   |
+| customer_key   | INT             | Foreign key referencing `gold.dim_customers`.                  |
+| order_date     | DATE            | Order date.                                                    |
+| shipping_date  | DATE            | Shipping date.                                                 |
+| due_date       | DATE            | Payment due date.                                              |
+| sales_amount   | DECIMAL(18,2)   | Total sales amount for the order line.                         |
+| quantity       | INT             | Quantity sold.                                                 |
+| price          | DECIMAL(18,2)   | Unit price.                                                    |
 
 ## Data Quality Rules
 

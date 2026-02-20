@@ -81,30 +81,31 @@ Surrogate keys generated using `MD5()` hash.
 
 ------------------------------------------------------------------------
 
-# 🔐 Role-Based Access Control
+## 🔐 Role-Based Access Control
 
-  Role               Responsibility
-  ------------------ ---------------------------------
-  ROLE_DWH_ADMIN     Project administration
-  ROLE_DWH_ETL       Load & transform RAW/CLEAN/MART
-  ROLE_DWH_ANALYST   Read-only access to MART
+| Role              | Responsibility                          |
+|-------------------|-----------------------------------------|
+| ROLE_DWH_ADMIN    | Project administration                  |
+| ROLE_DWH_ETL      | Load & transform RAW / CLEAN / MART     |
+| ROLE_DWH_ANALYST  | Read-only access to MART                |
 
-Compute separation: - `WH_ETL` - `WH_BI`
+### Compute Separation
+- ETL workloads → `WH_ETL`
+- BI / Analytics workloads → `WH_BI`
 
 ------------------------------------------------------------------------
 
 # 🔁 Architecture Comparison (SQL Server vs Snowflake)
-
-  Concept          SQL Server                      Snowflake
-  ---------------- ------------------------------- ------------------------------
-  Raw Layer        Bronze schema                   RAW schema
-  Clean Layer      Silver schema                   CLEAN schema
-  Business Layer   Gold schema                     MART schema
-  Data Load        BULK INSERT / SSIS              COPY INTO (Internal Stage)
-  Orchestration    Stored Procedures / SQL Agent   Streams + Tasks
-  Recovery         Backup / Restore                Time Travel
-  Security         Database Roles                  RBAC + Warehouses
-  Compute          Fixed server resources          Virtual Warehouses (Elastic)
+| Concept         | SQL Server                    | Snowflake                        |
+|----------------|------------------------------|----------------------------------|
+| Raw Layer      | Bronze schema                  | RAW schema                       |
+| Clean Layer    | Silver schema                  | CLEAN schema                     |
+| Business Layer | Gold schema                    | MART schema                      |
+| Data Load      | BULK INSERT / SSIS             | COPY INTO (Internal Stage)       |
+| Orchestration  | Stored Procedures / SQL Agent  | Streams + Tasks                  |
+| Recovery       | Backup / Restore               | Time Travel                      |
+| Security       | Database Roles                 | RBAC + Warehouses                |
+| Compute        | Fixed server resources         | Virtual Warehouses (Elastic)     |
 
 This demonstrates architectural portability across database platforms
 while preserving modeling principles.
@@ -112,17 +113,17 @@ while preserving modeling principles.
 ------------------------------------------------------------------------
 
 # 📁 Repository Structure
-
+```text
 ├── snowflake/ 
-            ├── 00_setup/ 
-            ├── 01_ingestion_raw/ 
-            ├── 02_transform_clean/
-            ├── 03_mart_gold/ 
-            ├── 04_incremental/ 
+│           ├── 00_setup/ 
+│           ├── 01_ingestion_raw/ 
+│           ├── 02_transform_clean/
+│           ├── 03_mart_gold/ 
+│           ├── 04_incremental/ 
 ├── datasets/ 
-├── docs/ └──
-README.md
-
+├── docs/
+└──README.md
+```
 ------------------------------------------------------------------------
 
 # ▶️ Execution Order
