@@ -147,3 +147,7 @@ in Snowflake to demonstrate architectural portability and
 modern cloud data warehouse design.
 
 👉 [Snowflake Data Warehouse Project](https://github.com/Farius0/Formation_Ligne/tree/main/Snowflake%20Data%20Warehouse)
+
+---
+
+⭐ If you find this repository useful, feel free to star it.

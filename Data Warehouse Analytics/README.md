@@ -199,3 +199,7 @@ reliability.
 -   Business-driven data segmentation
 -   Performance-oriented query structuring
 -   Production-ready reporting layer design
+
+------------------------------------------------------------------------
+
+⭐ If you find this repository useful, feel free to star it.

@@ -132,3 +132,8 @@ Les données utilisées sont issues de sources ouvertes, pédagogiques ou simul�
 Les icônes, images et autres assets visuels restent la propriété de leurs auteurs respectifs.
 
 Ce dépôt n’a pas vocation à un usage médical, financier ou opérationnel réel.
+
+---
+
+⭐ If you find this repository useful, feel free to star it.
+

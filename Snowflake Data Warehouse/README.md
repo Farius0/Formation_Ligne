@@ -155,3 +155,8 @@ warehouse modeling - Analytical transformation - Business reporting
 -   Data Quality Engineering
 -   Dimensional Modeling (Star Schema)
 -   Cross-platform DWH implementation (SQL Server → Snowflake)
+
+------------------------------------------------------------------------
+
+⭐ If you find this repository useful, feel free to star it.
+

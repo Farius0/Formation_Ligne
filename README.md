@@ -23,3 +23,9 @@ Certains projets sont déployés via **GitHub Pages** :
 - Mettre en pratique les compétences acquises lors de mes formations en ligne  
 - Suivre et partager ma progression dans différents domaines  
 - Constituer un portfolio évolutif et accessible 
+
+Si vous trouvez ce dépôt utile, n'hésitez pas à le mettre en favori.
+
+---
+
+⭐ If you find this repository useful, feel free to star it.
