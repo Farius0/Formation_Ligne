@@ -1,4 +1,4 @@
-# 📊 Formation_Ligne — Data Analytics Portfolio
+# 📊 Formation_Ligne __ Data Analytics Portfolio
 
 <p align="center">
   <b>Data Analytics • Business Intelligence • Automation • Applied Learning</b>
